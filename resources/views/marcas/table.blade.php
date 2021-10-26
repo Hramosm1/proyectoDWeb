@@ -3,7 +3,7 @@
         <thead>
             <tr>
                 <th>Nombre de la marca</th>
-                <th colspan="3">Action</th>
+                <th colspan="3">Accion</th>
             </tr>
         </thead>
         <tbody>
