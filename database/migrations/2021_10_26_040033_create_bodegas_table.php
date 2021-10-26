@@ -14,7 +14,7 @@ class CreateBodegasTable extends Migration
      */
     public function up()
     {
-        Schema::create('tbbodegas', function (Blueprint $table) {
+        Schema::create('tbbodega', function (Blueprint $table) {
             $table->increments('idbodega');
             $table->string('nombodega');
             $table->string('direccion');
