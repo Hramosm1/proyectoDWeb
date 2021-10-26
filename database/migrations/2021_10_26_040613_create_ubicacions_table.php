@@ -14,8 +14,8 @@ class CreateUbicacionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('ubicacions', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('tbubicacion', function (Blueprint $table) {
+            $table->increments('idubicacion');
             $table->string('nomubicacion');
             $table->integer('idbodega');
             $table->timestamps();
@@ -30,6 +30,6 @@ class CreateUbicacionsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('ubicacions');
+        Schema::drop('tbubicacion');
     }
 }

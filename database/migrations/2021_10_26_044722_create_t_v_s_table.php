@@ -14,8 +14,8 @@ class CreateTVSTable extends Migration
      */
     public function up()
     {
-        Schema::create('t_v_s', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('tbtv', function (Blueprint $table) {
+            $table->increments('idtv');
             $table->integer('idmarcas');
             $table->string('tvdescripcion');
             $table->integer('tvcantidad');
@@ -32,6 +32,6 @@ class CreateTVSTable extends Migration
      */
     public function down()
     {
-        Schema::drop('t_v_s');
+        Schema::drop('tbtv');
     }
 }

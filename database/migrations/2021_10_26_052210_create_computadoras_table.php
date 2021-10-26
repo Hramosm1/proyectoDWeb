@@ -14,11 +14,11 @@ class CreateComputadorasTable extends Migration
      */
     public function up()
     {
-        Schema::create('computadoras', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('idmarca');
-            $table->string('descripcion');
-            $table->integer('cantidad');
+        Schema::create('tbcomputadoras', function (Blueprint $table) {
+            $table->increments('idcomputadoras');
+            $table->integer('idmarcas');
+            $table->string('compdescripcion');
+            $table->integer('compcantidad');
             $table->integer('idubicacion');
             $table->timestamps();
             $table->softDeletes();
@@ -32,6 +32,6 @@ class CreateComputadorasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('computadoras');
+        Schema::drop('tbcomputadoras');
     }
 }

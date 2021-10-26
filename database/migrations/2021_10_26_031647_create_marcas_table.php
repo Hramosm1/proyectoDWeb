@@ -14,8 +14,8 @@ class CreateMarcasTable extends Migration
      */
     public function up()
     {
-        Schema::create('marcas', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('tbmarcas', function (Blueprint $table) {
+            $table->increments('idmarcas');
             $table->string('nommarca');
             $table->timestamps();
             $table->softDeletes();
@@ -29,6 +29,6 @@ class CreateMarcasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('marcas');
+        Schema::drop('tbmarcas');
     }
 }

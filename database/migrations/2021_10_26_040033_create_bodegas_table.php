@@ -14,8 +14,8 @@ class CreateBodegasTable extends Migration
      */
     public function up()
     {
-        Schema::create('bodegas', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('tbbodegas', function (Blueprint $table) {
+            $table->increments('idbodega');
             $table->string('nombodega');
             $table->string('direccion');
             $table->timestamps();
@@ -30,6 +30,6 @@ class CreateBodegasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('bodegas');
+        Schema::drop('tbbodegas');
     }
 }

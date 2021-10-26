@@ -14,8 +14,8 @@ class CreateRefrigeradorasTable extends Migration
      */
     public function up()
     {
-        Schema::create('refrigeradoras', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('tbrefrigeradora', function (Blueprint $table) {
+            $table->increments('idrefrigeradora');
             $table->integer('idmarcas');
             $table->string('refridesc');
             $table->integer('refricantidad');
@@ -32,6 +32,6 @@ class CreateRefrigeradorasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('refrigeradoras');
+        Schema::drop('tbrefrigeradora');
     }
 }
